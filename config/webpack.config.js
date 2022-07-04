@@ -582,6 +582,7 @@ module.exports = function (webpackEnv) {
           },
           isEnvProduction
             ? {
+                publicPath: './',
                 minify: {
                   removeComments: true,
                   collapseWhitespace: true,
