@@ -1,17 +1,19 @@
 import React from 'react';
-import API from '../api';
+import Header from '~components/header';
+import SubHeader from '~components/subheader';
+import PersonsList from '~components/persons-list';
 import './App.scss';
 
 function App() {
-    React.useEffect(() => {
-        API().get('/persons?limit=2')
-        .then(data => console.log(data));
-    }, [])
     return (
         <div className="App">
-            <header className="App-header">
-                text to test
-            </header>
+            <Header />
+            <SubHeader />
+            <main>
+                <div className="main-container">
+                    <PersonsList />
+                </div>
+            </main>
         </div>
     );
 }

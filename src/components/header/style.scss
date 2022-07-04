@@ -1,0 +1,17 @@
+@import '~styles/variables.scss';
+
+.header {
+    padding: 12px 0;
+    background-color: $header-bg-from-pdf-task;
+    &__logo-link {
+        display: block;
+    }
+    &__logo {
+        display: block;
+        width: 141px;
+        height: 32px;
+    }
+    &__inner {
+        display: flex;
+    }
+}

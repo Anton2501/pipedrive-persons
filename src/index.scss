@@ -1,6 +1,40 @@
+@import '~styles/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #909090;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 32px;
+  background-color: #ebebeb;
+  min-height: calc(100vh + 1px);
+}
+
+main {
+  padding-bottom: 48px;
+  background-color: $white-color;
+}
+
+.main-container {
+  padding: 0 16px;
+  @media (min-width: $desktop-breakpoint) {
+    width: 1160px;
+    margin: 0 auto;
+  }
 }
