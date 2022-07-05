@@ -13,7 +13,7 @@ function Search({ value, onChange, onFocus }) {
         <div className="search">
             {isBackdropVisible && <div className="search__backdrop" onClick={() => setBackdropVisiability(false)}/>}
             <i className="search__icon">
-                <SearchIcon color="#192435" />
+                <SearchIcon color="#757577" />
             </i>
             <input type="text" value={value} onChange={onChange} onFocus={onFocusHandler} placeholder="Filter by name" className="search__input" />
         </div>
