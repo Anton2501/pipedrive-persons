@@ -8,12 +8,16 @@ function Header() {
             <div className="main-container">
                 <div className="header__inner">
                     <a href="/" className="header__logo-link">
-                        <img src={Logo} alt="Pipeline logo" className="header__logo" />
+                        <img
+                            src={Logo}
+                            alt="Pipeline logo"
+                            className="header__logo"
+                        />
                     </a>
                 </div>
             </div>
         </header>
-    )
+    );
 }
 
 export default Header;
